@@ -1,0 +1,1175 @@
+/* font-family: "Inter", sans-serif;
+font-family: "Poppins", sans-serif; */
+
+:root {
+    --purple: #9454E6;
+   
+  }
+
+body{
+    font-family: "Poppins", sans-serif; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ---------------------------------------------------------Login Page Code ----------------------------------- */
+
+.login_background{
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/login_background.png) #040404;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login_white_div{
+    width: 45%;
+    background-color: white;
+    border-radius: 15px;
+    min-height: 500px;
+    position: absolute;
+    top: 50%;
+    
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_overlay{
+    position: absolute;
+    background: #04040467;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+.form_content{
+    width:70%;
+}
+.login_white_div h2{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: var(--purple);
+    font-family: 'Inter';
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 800;
+}
+
+.login_white_div p{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: #707070;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.login_white_div label{
+    font-family: "Poppins", sans-serif; 
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #5C5C5C;
+    margin-bottom: 8px;
+}
+
+.login_white_div .inputdiv{
+    font-family: "Poppins", sans-serif;
+    padding: 15px 10px; 
+    font-size: 14px;
+    background-color: #132C4B0F;
+    
+   
+  
+    margin-bottom: 8px;
+}
+.login_white_div button{
+    width: 100%;
+    background-color: var(--purple);
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+/* ---------------------------------------- Header __________________________---- */
+
+.header_menu a{
+    font-family: "Inter", sans-serif;
+}
+.header_menu li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar_right_button a{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar_right_button button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--purple);
+    font-family: "Inter", sans-serif;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.navbar_right_button .shopping_cart_div{
+    background-color: white;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainheaderdiv{
+    box-shadow: var(--purple) 0px 4px 13px -1px;
+    background-color: black;
+}
+
+.mainheaderdivwhite{
+    box-shadow: rgba(0, 0, 0, 0.295) 0px 4px 13px -1px;
+    background-color: white;
+}
+
+
+/* --------------------------------- Signup Main ----------------------------------------------  */
+
+
+
+.signup_main{
+    background-color: black;
+    padding: 150px 0;
+}
+.box_trade{
+    border-radius: 5px;
+    border: 1px solid var(--purple);
+    padding: 20px;
+}
+.box_trade h2{
+    font-family: "Inter", sans-serif;
+    color: var(--purple);
+    font-size: 35px;
+    line-height: 60px;
+    font-weight: 800;
+
+}
+.tab_main_div{
+    width: 50%;
+    margin: 20px auto 50px auto;
+    background-color: var(--purple);
+    border-radius: 25px;
+    padding: 2px;
+    display: flex;
+    
+}
+
+.tab_main_div .tab_item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.tab_main_div .tab_item.active{
+    background-color: #120C1B;
+    border-radius: 25px;
+}
+.tab_main_div .tab_item p{
+    margin-bottom: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.box_trade .content_div{
+    margin-top: 15px;
+    padding: 10px 20px;
+    display: none;
+
+}
+
+.box_trade .content_div.active{
+   
+    display: block;
+
+}
+
+.box_trade .content_div p{
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+    color: white;
+}
+.box_trade .content_div p span{
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 800;
+    color: var(--purple);
+}
+
+.box_trade .content_div ul li{
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif; 
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    color: white;
+}
+
+.box_trade .bottom_button button{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    background-color: var(--purple);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+    line-height: 43px;
+    font-weight: 800;
+}
+.box_trade .bottom_button button:hover{
+    background-color: black;
+    border: 1px solid var(--purple);
+}
+
+
+
+
+/* ---------------------------------- Home Banner ---------------------------------------------- */
+
+
+.home_banner h1{
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+.banner_button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.banner_button_div span{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+
+
+.circle_shadow_div{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 100px 60px rgba(148, 84, 230, 0.6);
+
+}
+.circle_shadow_div img{
+
+width: 430px;
+}
+
+
+
+
+
+
+/* ------------------------------    Academy Section ------------------------  */
+
+
+
+.academy_heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.academy_heading span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4eefd
+}
+.academy_heading h2{
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 40px;
+
+}
+
+.academy_sectiion  p{
+    color: #373737;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif; 
+
+}
+
+.academy_sectiion li{
+    color: #373737;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif; 
+}
+
+.academy_box{
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    padding: 20px;
+}
+.academy_box_left_image{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background:var(--purple)
+}
+
+
+.academy_box h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif; 
+}
+
+
+
+
+/* ------------------------------------- Live Sessions ----------------------------------------  */
+.live_session_heading span{
+background-color: #1d1d1d;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.live_session_heading h2{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.live_sessions_main p{
+    color: white;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* ------------------------------------------  Trade Alerts  --------------------------------------------   */
+
+.trade_alerts{
+
+padding: 100px 0;
+
+}
+
+
+
+.trade_alerts h2{
+text-align: center;
+color: var(--purple);
+font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+
+}
+.trade_alerts p{
+text-align: center;
+color: #373737;
+font-family: "Poppins", sans-serif; 
+font-weight: 400;
+margin-top: 20px;
+line-height: 40px;
+
+}
+
+.map_background_div {
+    background:url(../images/map_bg_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin-top: 25px;
+    position: relative;
+    padding: 50px;
+}
+
+.map_background_div .bar_lines_image{
+
+    position: absolute;
+    z-index: 1;
+    width:70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.map_background_div .phone_image{
+position: absolute;
+z-index: 2;
+width: 190px;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}  
+
+
+/* ------------------------------------------  Tap to Trade  --------------------------------------------   */
+
+.tap_to_trade{
+
+    padding: 100px 0;
+    
+    }
+    
+    
+    
+    .tap_to_trade h2{
+    text-align: center;
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+        font-weight: 800;
+        margin-bottom: 15px;
+    
+    }
+    .tap_to_trade p{
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 40px;
+    
+    }
+    
+    
+    .tap_to_trade img{
+        margin: 50px auto 0 auto;
+        display: block;
+        width: 100%;
+    }
+  
+
+    
+    
+     
+    
+    /* ------------------------------------ Our Scanners  ----------------------------------  */
+
+
+    .our_scanners_main{
+padding: 100px 0;
+    }
+
+
+    .ourscanner_second_box{
+        background-color: #f4eefc;
+        border-radius: 20px;
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ourscanner_second_box img{
+width: 100%;
+    }
+
+    .ourscanner_second_box p{
+        color: #373737;
+        font-family: "Poppins", sans-serif; 
+        font-weight: 400;
+        
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        min-height: 280px;
+
+    }
+
+    .ourscanner_second_box h2{
+        margin-top: 45px;
+        margin-bottom: 20px;
+        color: var(--purple);
+    font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+    }
+
+
+
+
+
+
+
+    /* ------------------------------------- Download Our Mobile App ----------------------------------------  */
+.download_our_mobile_app_main span{
+    background-color: #1d1d1d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .download_our_mobile_app_main img{
+        width: 70%;
+    }
+    
+    
+    .download_our_mobile_app_main h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+    .download_our_mobile_app_main p{
+        color: white;
+        font-family: "Poppins", sans-serif; 
+        font-weight: 400;
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    
+.download_our_mobile_app_main button{
+    background-color: var(--purple);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 10px 15px;
+}
+
+
+
+
+/* ------------------------------------------ Testimonial -----------------------------------------  */
+
+.testimonial_main h1{
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.testimonial_box{
+    background-color: #f4eefd;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.rating_div img{
+    width: 20px!important;
+  
+}
+.rating_div span{
+    display: flex;
+    align-items: center;
+}
+.rating_text{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    margin-left:10px;
+    margin-top: 6px;
+}
+
+
+.testimonial_right_content_div p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #3C3839;
+    font-family: "Poppins", sans-serif; 
+    
+    margin-top: 10px;
+}
+
+
+.testimonial_right_content_div h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    
+    margin-top: 10px;
+}
+
+.testimonial_right_content_div h4{
+    font-size: 17px;
+    font-weight: 500;
+    color: #3C3839;
+    font-family: "Inter", sans-serif;
+    
+    margin-top: 10px;
+}
+
+.testimonial_carousel{
+    position: relative;
+}
+
+
+.testimonial_carousel .owl-prev{
+    position:absolute;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    background-color: var(--purple)!important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial_carousel .owl-prev span{
+    color: white;
+    font-size: 46px;
+}
+
+.testimonial_carousel .owl-next{
+    position:absolute;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+    background-color: var(--purple)!important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial_carousel .owl-next span{
+    color: white;
+    font-size: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- Video DIv -----------------------------------------  */
+
+.our_learn_main h2{
+
+color: var(--purple);
+font-family: "Inter", sans-serif;
+font-size: 28px;
+font-weight: 800;
+
+
+}
+
+.our_learn_main p{
+
+}
+
+.our_learn_main h5{
+font-weight: bolder;
+}
+
+.our_learn_main ul{
+
+}
+.our_learn_main li{
+font-weight: 400;
+color: #373737;
+font-family: "Poppins", sans-serif; 
+margin-bottom: 10px;
+}
+
+.video_bg_div{
+    background-color: var(--purple);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+/* --------------------------------------------- Membership Page ---------------------------  */
+
+
+.membershop_main{
+    min-height: 100vh;
+}
+
+.cart_box{
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_box img{
+width: 120px;
+margin-bottom: 25px;
+}
+
+.cart_box h2{
+color: var(--purple);
+font-weight: 700;
+font-size: 23px;
+font-family: "Inter", sans-serif;
+}
+
+.cart_box p{
+    font-weight: 400;
+    color: #373737;
+    font-family: "Poppins", sans-serif; 
+    text-align: center;
+}
+
+.cart_box button{
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: white;
+    padding: 15px 25px;
+}
+
+.cart_box button:hover{
+
+    border: 1px solid var(--purple);
+    
+    background-color: white;
+    color: black;
+    
+}
+.customer_box img{
+width: 100px;
+}
+
+.customer_box h2{
+color: #546ce6;
+font-weight: 700;
+font-size: 23px;
+font-family: "Inter", sans-serif;
+}
+
+.cart_box p{
+    font-weight: 400;
+    color: #373737;
+    font-family: "Poppins", sans-serif; 
+    text-align: center;
+}
+
+.cart_box button{
+
+    border: none;
+    border-radius: 10px;
+    background-color: #546ce6;
+    color: white;
+    padding: 15px 25px;
+}
+
+.cart_box button:hover{
+
+    border: 1px solid #546ce6;
+    
+    background-color: white;
+    color: black;
+    
+}
+
+.cart_right_box{
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.subscription_item_row{
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.cart_right_box h3{
+    color: var(--purple);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+}
+.cart_right_box span{
+    color: #757575;
+    font-size: 14px;
+}
+
+.subscription_item_text{
+    color: #373737;
+    font-size:12px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif; 
+   
+}
+
+
+.subscription_item_box_image{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.subscription_item_content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.subscription_item_content h4{
+color: #525252;
+font-size: 12px;
+font-family: "Inter", sans-serif;
+font-weight: 700;
+
+}
+
+.subscription_item_content span{
+    color: #525252;
+    font-size: 11px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.subscription_item_content p{
+    color: #525252;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+
+/* ---------------------------  customer_registration_main ----------------------------  */
+
+
+.customer_registration_main{
+    min-height: 100vh;
+}
+
+.customer_registration_box{
+    width: 60%;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 50px auto;
+    
+}
+.customer_registration_box h1{
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+.tab_div_top{
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+
+.step_text{
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.step_information_text{
+    color: #626164;
+    font-family: "Inter", sans-serif;
+
+}
+.tab_texts{
+    display: none;
+}
+.tab_texts.active{
+    display: flex;
+    align-items: center;
+}
+.tab_lines{
+    display: flex;
+
+}
+
+.tab_line{
+    width: 110px;
+    height: 7px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.tab_line.active{
+    background-color: var(--purple);
+}
+
+
+.customer_registration_form .inputdiv{
+    font-family: "Poppins", sans-serif;
+    padding: 10px 10px; 
+    font-size: 14px;
+    background-color: #132C4B0F;
+    
+   
+  
+    margin-bottom: 8px;
+}
+
+.customer_registration_form label{
+    font-family: "Poppins", sans-serif; 
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #5C5C5C;
+    margin-bottom: 8px;
+}
+
+
+.step_div{
+    display: none;
+}
+.step_div.active{
+    display: block;
+}
+.cancel_btn{
+    background-color: #F1F1F1;
+    padding: 5px 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.next_btn{
+    background-color: var(--purple);
+    color: white;
+    padding: 5px 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.formtext_info{
+    color: var(--purple);
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+
+}
+
+.step_last_form h2{
+font-size: 25px;
+color:var(--purple);
+margin-bottom: 10px;
+font-weight: 800;
+}
+
+.step_last_form p{
+font-weight: 600;
+font-size: 20px;
+font-family: "Poppins", sans-serif; 
+color: #5C5C5C;
+
+}
+
+
+
+/* ----------------------------------- Footer --------------------------------------------  */
+
+
+.footer_main_div{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+footer{
+display: grid;
+grid-template-columns: 30% 20% auto;
+gap: 30px;
+
+}
+footer p{
+
+    color: #BABABA;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif; 
+
+}
+footer h5{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: white;
+}
+.social_div{
+    display: flex;
+    margin-top: 15px;
+}
+.social_box{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer h3{
+    color: white;
+}
+
+footer ul{
+    list-style-type:none;
+    padding: 0;
+    margin-top: 15px;
+
+}
+footer ul li{
+    margin-bottom: 20px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+/* ---------------------------------------------------Media Query ----------------------------------------- 
+
+*/
+
+
+
+@media screen and (max-width:500px){
+    .login_white_div{
+        width: 95%;
+       
+    
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30px;
+        
+        }
+
+        .testimonial_carousel .owl-prev{
+           
+            left: 0px;
+            
+            width: 30px;
+            height: 30px;
+           
+        }
+        .testimonial_carousel .owl-prev span{
+           
+            font-size: 26px;
+        }
+        
+        .testimonial_carousel .owl-next{
+            
+            right: 0px;
+            transform: translateY(-50%);
+           
+            width: 30px;
+            height: 30px;
+            
+        }
+        .testimonial_carousel .owl-next span{
+           
+            font-size: 26px;
+        }
+        .customer_registration_box{
+            width: 90%;
+            border-radius: 15px;
+            padding: 30px 0;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin: 30px auto;
+            
+        }
+}

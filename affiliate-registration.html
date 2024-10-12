@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Affiliate Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/file.css" />
+  </head>
+  <body>
+    <!-- ------------------------------ Header ------------------------------  -->
+    <div class="bg-white">
+      <div
+        class="container-xxl container-fluid mainheaderdiv mainheaderdivwhite px-0"
+      >
+        <nav
+          class="navbar navbar-expand-lg mainheaderdiv mainheaderdivwhite py-4"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="assets/images/black_logo.png"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav navbar-light mx-auto mb-2 mb-lg-0 header_menu"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#academy">Academy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#live_sessions">Sessions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#trade_alerts">Trade Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#tap_to_trade">Tab to Trade</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#scanners">Scanners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#membership">Membership</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="navbar_right_button d-flex justify-content-center align-items-center"
+            >
+              <a href="login.html" class="mx-3 text-black">Login</a>
+              <button class="mx-3"><a href="signup.html">Join Now</a></button>
+              <a href="membership.html">
+                <div class="shopping_cart_div mx-3">
+                  <img src="assets/images/cart_white_bg.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- -------------------------------------- Header End --------------------------------------  -->
+
+    <!-- -------------------  Customer Registration  -------------------------------------  -->
+
+    <div class="container-fluid py-5 customer_registration_main">
+      <div class="container">
+        <div class="customer_registration_box">
+          <h1>Affiliate Registration</h1>
+
+          <div class="container">
+            <div class="tab_div_top">
+              <div class="tab_texts active">
+                <span class="step_text me-2">Step 1</span>
+                <span class="step_information_text"
+                  ><b>User Information</b></span
+                >
+              </div>
+
+              <div class="tab_texts">
+                <span class="step_text me-2">Step 2</span>
+                <span class="step_information_text"
+                  ><b>Payment Information</b></span
+                >
+              </div>
+
+              <div class="tab_texts">
+                <span class="step_text me-2">Step 3</span>
+                <span class="step_information_text"
+                  ><b>Confirmation</b></span
+                >
+              </div>
+
+              <div class="tab_lines">
+                <div class="tab_line active"></div>
+                <div class="tab_line"></div>
+                <div class="tab_line"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <br />
+
+          <form class="px-4 customer_registration_form">
+            <div class="step_one_form step_div active">
+
+              <div class="row py-2">
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="firstname" class="form-label"
+                      >First Name *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control inputdiv"
+                      id="firstname"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="lastname" class="form-label">Last Name *</label>
+                    <input
+                      type="text"
+                      class="form-control inputdiv"
+                      id="lastname"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row py-2">
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="email" class="form-label"
+                      >Email*</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control inputdiv"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="phoneno" class="form-label">Phone*</label>
+                    <input
+                      type="number"
+                      class="form-control inputdiv"
+                      id="phoneno"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row py-2">
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="username" class="form-label"
+                      >Username*</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control inputdiv"
+                      id="username"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="dateofbirth" class="form-label">Date of Birth*</label>
+                    <input
+                      type="date"
+                      class="form-control inputdiv"
+                      id="dateofbirth"
+                      placeholder="Date Of Birth"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row py-2">
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="password" class="form-label"
+                      >Password*</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control inputdiv"
+                      id="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="">
+                    <label for="confirmpassword" class="form-label">Confirm Password*</label>
+                    <input
+                      type="password"
+                      class="form-control inputdiv"
+                      id="confirmpassword"
+                      placeholder="Confirm Password"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+            <div class="step_two_form step_div ">
+
+                <h4 class="formtext_info">Payment Information</h4>
+
+                <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="payementtype" class="form-label"
+                          >Payment Type*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputdiv"
+                          id="payementtype"
+                          placeholder="Payment Type"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                     
+                    </div>
+                  </div>
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="nameorcard" class="form-label"
+                          >Name on Card*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputdiv"
+                          id="nameorcard"
+                          placeholder="Name on Card"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="cardtype" class="form-label"
+                              >Card Type*</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control inputdiv"
+                              id="cardtype"
+                              placeholder="Card Type"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="credeitcardnumber" class="form-label"
+                          >Credit Card Number*</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control inputdiv"
+                          id="credeitcardnumber"
+                          placeholder="0000 0000 0000 0000"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="cvv" class="form-label"
+                              >CVV*</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control inputdiv"
+                              id="cvv"
+                              placeholder="112"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="expmonth" class="form-label"
+                          >Exp Month*</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control inputdiv"
+                          id="expmonth"
+                          placeholder="Sep 5,2028"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="expyear" class="form-label"
+                              >Exp Year*</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control inputdiv"
+                              id="expyear"
+                              placeholder="2028"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+                  <hr/>
+
+
+
+                  <h4 class="formtext_info">Billing Address</h4>
+
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="addressline1" class="form-label"
+                          >Address Line 1*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputdiv"
+                          id="addressline1"
+                          placeholder="Address"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="addressline2" class="form-label"
+                              >Address Line 2</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control inputdiv"
+                              id="addressline2"
+                              placeholder="Address"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="city" class="form-label"
+                          >City*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputdiv"
+                          id="city"
+                          placeholder="City"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="zipcode" class="form-label"
+                              >Zip/Postal code*</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control inputdiv"
+                              id="zipcode"
+                              placeholder="Zip/Postal code"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="row py-2">
+                    <div class="col-md-6">
+                      <div class="">
+                        <label for="countery" class="form-label"
+                          >Country*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputdiv"
+                          id="countery"
+                          placeholder="Country"
+                          required
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="stateprovince" class="form-label"
+                              >State/Province*</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control inputdiv"
+                              id="stateprovince"
+                              placeholder="State/Province"
+                              required
+                            />
+                          </div>
+                    </div>
+
+                  </div>
+
+
+
+
+            </div>
+
+            <div class="step_last_form step_div  px-4">
+
+
+
+                <h2 class="final_text_heading">Affiliate Registration</h2>
+                <p>Are you sure you want to Purchase 
+                    this Package?</p>
+           
+            </div>
+
+
+            <div class="step_btns_div d-flex justify-content-between px-4 py-4"> 
+                <button class="cancel_btn">Cancel</button>
+                <button class="next_btn">Next</button>
+            </div>
+        </form>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------ Footer Start ----------------------------------------  -->
+
+    <div class="footer_main_div container-fluid">
+      <div class="container">
+        <footer>
+          <div class="footer_column">
+            <img src="assets/images/FOREX.png" />
+
+            <p>
+              TradeMaster FX: Your all-in-one Forex trading app with real-time
+              data, expert insights, and secure, seamless transactions.
+            </p>
+
+            <h5>Follow Us</h5>
+            <div class="social_div">
+              <div class="social_box">
+                <img src="assets/images/facebook.png" />
+              </div>
+              <div class="social_box">
+                <img src="assets/images/instagram.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_column">
+            <h3>Navigations</h3>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+
+              <li>
+                <a href="#">Academy</a>
+              </li>
+
+              <li>
+                <a href="#">Sessions</a>
+              </li>
+
+              <li>
+                <a href="#">Trade Alerts</a>
+              </li>
+
+              <li>
+                <a href="#">Scanners</a>
+              </li>
+
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_column">
+            <h3>Company</h3>
+            <ul>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Term of services</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- Footer End ----------------------------------------------- -- - -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="assets/js/file.js"></script>
+  </body>
+</html>
